@@ -547,7 +547,7 @@ a.spec h3{color:var(--bg)}
 .expert{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:28px;border-radius:20px;border:1px solid var(--line);background:rgba(255,255,255,.35)}
 .expert-photo{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:var(--panel)}
 .expert-photo::before{content:attr(data-initials);position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:34px;font-weight:600;color:var(--bronze)}
-.expert-photo img{position:relative;width:100%;height:100%;object-fit:cover}
+.expert-photo img{position:relative;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
 .expert-body{display:flex;flex-direction:column;gap:10px}
 .expert-body .advisor-role{font-size:12px;letter-spacing:.14em}
 .expert-body .advisor-role::before{width:24px}
@@ -690,7 +690,7 @@ a.spec h3{color:var(--bg)}
     </div>
     <div class="experts">
       <article class="expert">
-        <div class="expert-photo" data-initials="AK"><img src="/img/angelika-kaczmarczyk.jpg" alt="dr Angelika Kaczmarczyk" width="753" height="1024" loading="lazy" onerror="this.remove()"></div>
+        <div class="expert-photo" data-initials="AK"><img src="/img/angelika-kaczmarczyk.jpg" data-fallback="https://mdotax.pl/wp-content/uploads/2024/02/Kaczmarczyk-Angelika-mdotax-753x1024.jpg" alt="dr Angelika Kaczmarczyk" width="753" height="1024" loading="lazy" onerror="if(this.dataset.fallback&amp;&amp;this.src!==this.dataset.fallback){this.src=this.dataset.fallback}else{this.remove()}"></div>
         <div class="expert-body">
           <span class="advisor-role">Rachunkowość i sprawozdawczość</span>
           <h3>dr Angelika Kaczmarczyk</h3>
@@ -703,7 +703,7 @@ a.spec h3{color:var(--bg)}
         </div>
       </article>
       <article class="expert">
-        <div class="expert-photo" data-initials="JR"><img src="/img/jaroslaw-redo.jpg" alt="dr Jarosław Redo" width="753" height="1024" loading="lazy" onerror="this.remove()"></div>
+        <div class="expert-photo" data-initials="JR"><img src="/img/jaroslaw-redo.jpg" data-fallback="https://mdotax.pl/wp-content/uploads/2024/02/Jaroslaw-Redo-mdotax-753x1024.jpg" alt="dr Jarosław Redo" width="753" height="1024" loading="lazy" onerror="if(this.dataset.fallback&amp;&amp;this.src!==this.dataset.fallback){this.src=this.dataset.fallback}else{this.remove()}"></div>
         <div class="expert-body">
           <span class="advisor-role">Finanse publiczne i fundusze UE</span>
           <h3>dr Jarosław Redo</h3>
